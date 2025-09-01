@@ -1,5 +1,5 @@
 .button {
-  background-color: $primary-color;
+  background-color: theme('primary');
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -8,9 +8,5 @@
   
   &:hover {
     opacity: 0.8;
-  }
-  
-  &.secondary {
-    background-color: $secondary-color;
   }
 }

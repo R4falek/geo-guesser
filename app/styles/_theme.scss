@@ -1,0 +1,40 @@
+$light-theme: (
+  'primary': #0070f3,
+  'primary-hover': #0051cc,
+  'secondary': #6b7280,
+  'secondary-hover': #4b5563,
+  'background': #ffffff,
+  'surface': #f8fafc,
+  'text-primary': #1f2937,
+  'text-secondary': #6b7280,
+  'border': #e5e7eb,
+  'success': #10b981,
+  'error': #ef4444,
+  'warning': #f59e0b,
+);
+
+$dark-theme: (
+  'primary': #3b82f6,
+  'primary-hover': #2563eb,
+  'secondary': #9ca3af,
+  'secondary-hover': #d1d5db,
+  'background': #0f172a,
+  'surface': #1e293b,
+  'text-primary': #f1f5f9,
+  'text-secondary': #cbd5e1,
+  'border': #334155,
+  'success': #22c55e,
+  'error': #ef4444,
+  'warning': #eab308,
+);
+
+@mixin generate-theme($theme-map, $theme-name) {
+  [data-theme='#{$theme-name}'] {
+    @each $key, $value in $theme-map {
+      --#{$key}: #{$value};
+    }
+  }
+}
+
+@include generate-theme($light-theme, 'light');
+@include generate-theme($dark-theme, 'dark');

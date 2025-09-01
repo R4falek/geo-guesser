@@ -1,0 +1,30 @@
+@use 'theme';
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  color: theme('text-primary');
+  background-color: theme('background');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: theme('text-primary');
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  margin-bottom: $spacing-md;
+  color: theme('text-secondary');
+}
