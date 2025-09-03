@@ -1,0 +1,42 @@
+.themeToggle {
+  position: relative;
+  padding: 12px;
+  background-color: theme(primary);
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: theme(primary-hover);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px theme(border);
+  }
+
+  .iconContainer {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+
+  .icon {
+    position: absolute;
+    inset: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.75);
+
+    &.active {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+    }
+  }
+}
