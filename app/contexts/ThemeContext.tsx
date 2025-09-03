@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import { createContext, useContext, useEffect, useState } from "react"
+import React, { createContext, useContext, useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
 
@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme | null
     const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    
+
     const initialTheme = savedTheme || systemPreference
     setTheme(initialTheme)
     document.documentElement.setAttribute('data-theme', initialTheme)

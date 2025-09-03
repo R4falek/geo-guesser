@@ -1,4 +1,4 @@
-import { ThemeProvider } from "./contexts/ThemeContext";
+import React from 'react';
 import './styles/globals.scss'
 
 export default function RootLayout({
@@ -9,9 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

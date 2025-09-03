@@ -1,12 +1,10 @@
-'use client'
-import Button from "./components/Button/Button.Component";
-import { useTheme } from "./contexts/ThemeContext";
+import Button from './components/Button/Button.Component';
+import { ThemeToggle } from './components/ThemeToggler/ThemeToggler.Component';
 
 export default function Home() {
-  const {toggleTheme, theme} = useTheme()
   return (
     <div>
-      <button onClick={toggleTheme}>theme toggle {theme}</button>
+      <ThemeToggle />
       <Button />
       elo
     </div>

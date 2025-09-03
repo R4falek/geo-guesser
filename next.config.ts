@@ -1,9 +1,9 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   sassOptions: {
     includePaths: ['./app/styles'],
-    prependData: `@use "_variables" as *;`,
+    prependData: '@use "_variables" as *;',
   },
 };
 
