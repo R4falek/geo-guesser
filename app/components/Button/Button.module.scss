@@ -1,12 +1,52 @@
 .button {
-  background-color: theme('primary');
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  
-  &:hover {
-    opacity: 0.8;
-  }
+    color: var(--text-primary) !important;
+    border-radius: 30px;
+
+    &:global(.MuiButton-contained) {
+        background: linear-gradient(135deg, #4ecdc4, #44a08d);
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.5);
+        }
+    }
+
+    &:global(.MuiButton-text) {
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &:global(.MuiButton-outlined) {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &:global(.MuiButton-sizeSmall) {
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    &:global(.MuiButton-sizeMedium) {
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    &:global(.MuiButton-sizeLarge) {
+        padding: 20px 50px;
+        border-radius: 50px;
+        font-size: 20px;
+        line-height: 20px;
+    }
 }

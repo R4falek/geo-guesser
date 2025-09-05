@@ -1,10 +1,11 @@
-import React from 'react';
-import styles from './Button.module.scss';
+import React from 'react'
+import styles from './Button.module.scss'
+import MuiButton, { ButtonProps } from '@mui/material/Button';
 
-const Button = () => {
+const Button = (props: ButtonProps) => {
   return (
-    <button className={`${styles.button}`}/>
-  );
-};
+    <MuiButton {...props} className={`${styles.button} ${props.className}`}/>
+  )
+}
 
-export default Button;
+export default Button
