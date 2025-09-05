@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/globals.scss'
-import AppBar from '../components/AppBar/AppBar.Component';
+import AppBar from './components/AppBar/AppBar.Component';
 
 export default function RootLayout({
   children,

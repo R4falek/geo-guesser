@@ -3,9 +3,9 @@ import MUIAppBar from '@mui/material/AppBar';
 import Logo from '../Logo/Logo.Component';
 import styles from './AppBar.module.scss'
 import { ThemeToggle } from '../ThemeToggler/ThemeToggler.Component';
-import NavigationMenu from '../NavigationMenu/NavigationMenu.Compoent';
-import { NavigationItems } from '@/app/Consts/NavigationItems.Const';
-import { LoginButtons } from '@/app/Consts/LoginButtons.Const';
+import NavigationMenu from '../NavigationMenu/NavigationMenu.Component';
+import { NavigationItems } from '@/app/consts/NavigationItems.Const';
+import { LoginButtons } from '@/app/consts/LoginButtons.Const';
 
 const AppBar = () => {
   return (
