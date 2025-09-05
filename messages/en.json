@@ -1,0 +1,20 @@
+{
+    "appBar": {
+        "demo": "Demo",
+        "gameModes": "Game modes",
+        "statistics": "Statistics",
+        "help": "Help",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout"
+    },
+    "home": {
+        "heroSection": {
+            "title": "GeoGuesser",
+            "subtitle": "🌍 Explore the World Through Geographic Challenges",
+            "body": "Put your geographic knowledge to the test in the most thrilling online game! Guess locations from around the globe using Street View and score points based on your accuracy.",
+            "playButton": "🎮 Play for free now!",
+            "demoButton": "▶️ See how it works"
+        }
+    }
+}

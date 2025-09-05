@@ -1,6 +1,7 @@
 .button {
     color: var(--text-primary) !important;
     border-radius: 30px;
+    text-transform: none !important;
 
     &:global(.MuiButton-contained) {
         background: linear-gradient(135deg, #4ecdc4, #44a08d);

@@ -1,13 +1,13 @@
-import { NavigationItem } from '../Models/NavigationItem.Model';
+import { NavigationItem } from '../models/NavigationItem.Model';
 
 export const LoginButtons: NavigationItem[] = [
   {
-    title: 'Zaloguj się',
+    title: 'login',
     icon: '🔓',
     variant: 'outlined',
   },
   {
-    title: 'Zarejestruj się',
+    title: 'register',
     icon: '🚀',
     variant: 'contained',
   },

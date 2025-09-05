@@ -1,0 +1,20 @@
+{
+    "appBar": {
+        "demo": "Demo",
+        "gameModes": "Tryby gry",
+        "statistics": "Statystyki",
+        "help": "Pomoc",
+        "login": "Zaloguj się",
+        "register": "Zarejestruj się",
+        "logout": "Wyloguj się"
+    },
+    "home": {
+        "heroSection": {
+            "title": "GeoGuesser",
+            "subtitle": "🌍 Odkryj Świat Przez Geograficzne Wyzwania",
+            "body": "Sprawdź swoją wiedzę geograficzną w najbardziej ekscytującej grze online! Odgaduj lokalizacje z całego świata używając Street View i zdobywaj punkty za dokładność.",
+            "playButton": "🎮 Zacznij grać za darmo!",
+            "demoButton": "▶️ Zobacz jak to działa"
+        }
+    }
+}

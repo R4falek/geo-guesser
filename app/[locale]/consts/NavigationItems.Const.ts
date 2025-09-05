@@ -1,20 +1,20 @@
-import { NavigationItem } from '../Models/NavigationItem.Model';
+import { NavigationItem } from '../models/NavigationItem.Model';
 
 export const NavigationItems: NavigationItem[] = [
   {
-    title: 'Demo',
+    title: 'demo',
     icon: '🎮',
   },
   {
-    title: 'Tryby gier',
+    title: 'gameModes',
     icon: '🗺️',
   },
   {
-    title: 'Statystyki',
+    title: 'statistics',
     icon: '📊',
   },
   {
-    title: 'Pomoc',
+    title: 'help',
     icon: '❓',
   },
 ]

@@ -1,10 +1,20 @@
 import type { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   sassOptions: {
     includePaths: ['./app/styles'],
     prependData: '@use "_variables" as *;',
   },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    })
+    return config
+  },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin()
+
+export default withNextIntl(nextConfig);
