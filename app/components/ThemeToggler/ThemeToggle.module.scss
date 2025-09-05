@@ -1,10 +1,13 @@
 .themeToggle {
   position: relative;
-  padding: 12px;
+  width: 40px;
+  height: 40px;
+  padding: 12px !important;
   background-color: theme(primary);
   border: none;
-  border-radius: 50%;
+  border-radius: 50% !important;
   transition: all 0.3s ease-in-out;
+  min-width: 40px !important;
   cursor: pointer;
 
   &:hover {
@@ -16,15 +19,10 @@
     transform: scale(0.95);
   }
 
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px theme(border);
-  }
-
   .iconContainer {
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
   }
 
   .icon {
