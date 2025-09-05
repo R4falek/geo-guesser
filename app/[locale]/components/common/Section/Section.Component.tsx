@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react'
 import styles from './Section.module.scss'
 
 interface SectionProps {
+    id: string
     title?: ReactNode
     subtitle?: string
     body?: string
@@ -9,9 +10,9 @@ interface SectionProps {
     classes?: string
 }
 
-const Section = ({ title, subtitle, body, children, classes }: SectionProps) => {
+const Section = ({ id, title, subtitle, body, children, classes }: SectionProps) => {
   return (
-    <section className={`${styles.section} ${classes}`}>
+    <section id={id} className={`${styles.section} ${classes}`}>
       <div className={styles.section__cont}>
         {title}
         {subtitle && <h2 className={styles.subTitle}>{subtitle}</h2>}

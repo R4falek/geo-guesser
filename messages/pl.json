@@ -1,7 +1,7 @@
 {
     "appBar": {
         "demo": "Demo",
-        "gameModes": "Tryby gry",
+        "games": "Tryby gry",
         "statistics": "Statystyki",
         "help": "Pomoc",
         "login": "Zaloguj się",
@@ -29,6 +29,18 @@
                 "instructionStep3": "Kliknij na mapie, gdzie myślisz, że się znajdujesz",
                 "instructionStep4": "Im bliżej rzeczywistej lokalizacji, tym więcej punktów!"
             }
+        },
+        "gamesSection": {
+            "title": "🎮 Tryby gier",
+            "body": "Różnorodne wyzwania dla każdego poziomu zaawansowania"
+        },
+        "statisticsSection": {
+            "title": "📊 Społeczność GeoGuesser"
+        },
+        "playSection": {
+            "title": "Gotowy na przygodę? 🚀",
+            "subtitle": "Dołącz do milionów graczy odkrywających świat przez GeoGuessr. Rozpocznij swoją geograficzną przygodę już dziś - całkowicie za darmo!",
+            "playButton": "🎮 Rozpocznij grę teraz!"
         }
     }
 }

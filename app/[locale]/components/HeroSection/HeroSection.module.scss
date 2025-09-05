@@ -12,22 +12,6 @@
         filter: drop-shadow(rgba(78, 205, 196, 0.4) 0px 0px 11.8262px);
     }
 
-    &__cont {
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .subtitle {
-        font-size: 24px;
-    }
-
-    .body {
-        font-size: 16px;
-        font-weight: 600;
-    }
-
     .btn-container {
         display: flex;
         flex-direction: row;

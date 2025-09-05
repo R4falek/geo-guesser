@@ -4,11 +4,13 @@ import { useTranslations } from 'next-intl'
 import styles from './HeroSection.module.scss'
 import TypewriterLabel from '../common/TypewriterLabel/TypewriterLabel.Component'
 import Section from '../common/Section/Section.Component'
+import Link from 'next/link'
 
 const HeroSection = () => {
   const t = useTranslations('home.heroSection')
   return (
     <Section
+      id=''
       title={
         <TypewriterLabel
           className={styles.title}
@@ -22,8 +24,12 @@ const HeroSection = () => {
       classes={styles['hero-section']}
     >
       <div className={styles['btn-container']}>
-        <Button size='medium' variant='contained'>{t('playButton')}</Button>
-        <Button size='medium' variant='outlined'>{t('demoButton')}</Button>
+        <Link href={'/play'}>
+          <Button size='medium' variant='contained'>{t('playButton')}</Button>
+        </Link>
+        <Link href={'/#demo'}>
+          <Button size='medium' variant='outlined'>{t('demoButton')}</Button>
+        </Link>
       </div>
     </Section>
   )

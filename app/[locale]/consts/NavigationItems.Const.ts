@@ -4,17 +4,25 @@ export const NavigationItems: NavigationItem[] = [
   {
     title: 'demo',
     icon: '🎮',
+    id: 'demo',
+    link: '/#demo',
   },
   {
-    title: 'gameModes',
+    title: 'games',
     icon: '🗺️',
+    id: 'games',
+    link: '/#games',
   },
   {
     title: 'statistics',
     icon: '📊',
+    id: 'statistics',
+    link: '/#statistics',
   },
   {
     title: 'help',
     icon: '❓',
+    id: 'help',
+    link: '/#help',
   },
 ]

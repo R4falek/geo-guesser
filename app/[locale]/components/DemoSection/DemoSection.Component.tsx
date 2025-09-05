@@ -8,6 +8,7 @@ const DemoSection = () => {
   const t = useTranslations('home.demoSection')
   return (
     <Section
+      id='demo'
       title={<h1 className={styles.title}>{t('title')}</h1>}
       body={t('body')}
       classes={styles['demo-section']}

@@ -3,6 +3,7 @@ import styles from './NavigationMenu.module.scss'
 import Button from '../common/Button/Button.Component'
 import { useTranslations } from 'next-intl'
 import { NavigationItem } from '../../models/NavigationItem.Model'
+import Link from 'next/link'
 
 interface NavigationMenuProps {
     items: NavigationItem[]
@@ -13,13 +14,18 @@ const NavigationMenu = ({ items }: NavigationMenuProps) => {
   return (
     <div className={styles['nav-menu']}>
       {items.map((item: NavigationItem) => (
-        <Button
-          startIcon={item.icon}
-          size='small'
-          variant={item.variant}
-          key={item.title}>
-          {t(item.title)}
-        </Button>
+        <Link
+          key={item.id}
+          href={item.link ?? '#'}
+        >
+          <Button
+            startIcon={item.icon}
+            size='small'
+            variant={item.variant}
+          >
+            {t(item.title)}
+          </Button>
+        </Link>
       ))}
     </div>
   )

@@ -1,7 +1,7 @@
 {
     "appBar": {
         "demo": "Demo",
-        "gameModes": "Game modes",
+        "games": "Games",
         "statistics": "Statistics",
         "help": "Help",
         "login": "Login",
@@ -29,6 +29,18 @@
                 "instructionStep3": "Click on the map where you think you are",
                 "instructionStep4": "The closer to the actual location, the more points you earn!"
             }
+        },
+        "gamesSection": {
+            "title": "🎮 Games",
+            "body": "Exciting challenges tailored to every skill level"
+        },
+        "statisticsSection": {
+            "title": "📊 GeoGuesser Community"
+        },
+        "playSection": {
+            "title": "Ready for an adventure? 🚀",
+            "subtitle": "Join millions of players discovering the world through GeoGuessr. Start your geographic adventure today - completely free!",
+            "playButton": "🎮 Start playing now!"
         }
     }
 }

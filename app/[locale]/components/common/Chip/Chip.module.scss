@@ -1,4 +1,6 @@
 .chip {
+    color: theme('text-primary') !important;
+    
     &:global(.MuiChip-contained) {
         background: linear-gradient(135deg, #4ecdc4, #44a08d);
         box-shadow: none;
