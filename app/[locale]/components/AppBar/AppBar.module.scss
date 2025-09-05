@@ -1,4 +1,6 @@
 .appBar {
+    top: 0;
+    
     &:global(.MuiAppBar-root) {
         background: linear-gradient(135deg, #2c3e50, #3498db);
         padding: 12px 20px;

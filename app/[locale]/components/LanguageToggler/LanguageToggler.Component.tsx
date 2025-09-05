@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Button from '../Button/Button.Component'
+import Button from '../common/Button/Button.Component'
 import styles from './LanguageToggler.module.scss'
 import { useLocale } from 'next-intl'
 import { usePathname, useRouter } from '@/i18n/navigation'

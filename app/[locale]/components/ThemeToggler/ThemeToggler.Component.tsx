@@ -4,7 +4,7 @@ import { useThemeStore } from '@/app/[locale]/stores/themeStore'
 import { useEffect } from 'react'
 import { Moon, Sun } from 'lucide-react';
 import styles from './ThemeToggle.module.scss'
-import Button from '../Button/Button.Component';
+import Button from '../common/Button/Button.Component';
 
 export const ThemeToggle = () => {
   const theme = useThemeStore(state => state.theme)

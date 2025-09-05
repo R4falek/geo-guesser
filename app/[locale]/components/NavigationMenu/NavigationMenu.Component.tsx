@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './NavigationMenu.module.scss'
-import Button from '../Button/Button.Component'
+import Button from '../common/Button/Button.Component'
 import { useTranslations } from 'next-intl'
 import { NavigationItem } from '../../models/NavigationItem.Model'
 

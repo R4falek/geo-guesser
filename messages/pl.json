@@ -15,6 +15,20 @@
             "body": "Sprawdź swoją wiedzę geograficzną w najbardziej ekscytującej grze online! Odgaduj lokalizacje z całego świata używając Street View i zdobywaj punkty za dokładność.",
             "playButton": "🎮 Zacznij grać za darmo!",
             "demoButton": "▶️ Zobacz jak to działa"
+        },
+        "demoSection": {
+            "title": "🎯 Jak to działa?",
+            "body": "Proste zasady, nieskończona zabawa! Oto jak grać w GeoGuesser",
+            "demo": {
+                "badge1": "👀 Rozejrzyj się",
+                "badge2": "🚶 Poruszaj się",
+                "badge3": "🗺️ Oznacz lokalizację",
+                "badge4": "🎯 Potwierdź odpowiedź",
+                "instructionStep1": "Zostaniesz przeniesiony w losowe miejsce na świecie",
+                "instructionStep2": "Użyj Street View, aby się rozejrzeć i znajdź wskazówki",
+                "instructionStep3": "Kliknij na mapie, gdzie myślisz, że się znajdujesz",
+                "instructionStep4": "Im bliżej rzeczywistej lokalizacji, tym więcej punktów!"
+            }
         }
     }
 }

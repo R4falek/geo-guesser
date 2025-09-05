@@ -11,7 +11,7 @@ interface LogoProps {
 const Logo = ({ width = 200, height = 40 }: LogoProps) => {
   return (
     <Link
-      href={'/dashboard'}
+      href={'/'}
       className={styles.logoLink}
       style={{ height: `${height}px` }}
     >

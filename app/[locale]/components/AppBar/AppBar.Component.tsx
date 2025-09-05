@@ -10,7 +10,7 @@ import LanguageToggler from '../LanguageToggler/LanguageToggler.Component';
 
 const AppBar = () => {
   return (
-    <MUIAppBar position="static" className={styles.appBar}>
+    <MUIAppBar position="sticky" className={styles.appBar}>
       <Logo />
       <NavigationMenu items={NavigationItems} />
       <NavigationMenu items={LoginButtons} />

@@ -1,0 +1,22 @@
+.demo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    align-items: center;
+
+    .btn-cont {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .instructions {
+        text-align: start;
+        p {
+            margin-bottom: 2px;
+        }
+    }
+}

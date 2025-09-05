@@ -15,6 +15,20 @@
             "body": "Put your geographic knowledge to the test in the most thrilling online game! Guess locations from around the globe using Street View and score points based on your accuracy.",
             "playButton": "🎮 Play for free now!",
             "demoButton": "▶️ See how it works"
+        },
+        "demoSection": {
+            "title": "🎯 How does it work?",
+            "body": "Simple rules, endless fun! Here's how to play GeoGuesser",
+            "demo": {
+                "badge1": "👀 Look around",
+                "badge2": "🚶 Move around",
+                "badge3": "🗺️ Mark location",
+                "badge4": "🎯 Confirm answer",
+                "instructionStep1": "You'll be dropped in a random location around the world",
+                "instructionStep2": "Use Street View to look around and find clues",
+                "instructionStep3": "Click on the map where you think you are",
+                "instructionStep4": "The closer to the actual location, the more points you earn!"
+            }
         }
     }
 }

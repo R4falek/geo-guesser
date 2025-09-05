@@ -1,0 +1,31 @@
+.chip {
+    &:global(.MuiChip-contained) {
+        background: linear-gradient(135deg, #4ecdc4, #44a08d);
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.5);
+        }
+    }
+
+    &:global(.MuiChip-text) {
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &:global(.MuiChip-outlined) {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }   
+    span {
+        pointer-events: none;
+    }
+}

@@ -1,7 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import React, { useEffect, useRef } from 'react'
+import styles from './GoogleStreetView.module.scss'
 
-export const GoogleStreetView = () => {
+interface GoogleStreetViewProps {
+  height?: number
+}
+
+export const GoogleStreetView = ({ height }: GoogleStreetViewProps) => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -14,5 +20,5 @@ export const GoogleStreetView = () => {
     }
   }, []);
 
-  return <div ref={ref} style={{ width: '100%', height: '800px', filter: 'invert(1)' }} />;
+  return <div ref={ref} style={{ height: `${height}px` }} className={styles['google-street-view']} />;
 }
