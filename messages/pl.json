@@ -32,7 +32,12 @@
         },
         "gamesSection": {
             "title": "🎮 Tryby gier",
-            "body": "Różnorodne wyzwania dla każdego poziomu zaawansowania"
+            "body": "Różnorodne wyzwania dla każdego poziomu zaawansowania",
+            "gameCard": {
+                "freeBtn": "Darmowy",
+                "premiumBtn": "Premium",
+                "registrationRequired": "Wymaga rejestracji"
+            }
         },
         "statisticsSection": {
             "title": "📊 Społeczność GeoGuesser"

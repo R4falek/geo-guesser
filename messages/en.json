@@ -32,7 +32,11 @@
         },
         "gamesSection": {
             "title": "🎮 Games",
-            "body": "Exciting challenges tailored to every skill level"
+            "body": "Exciting challenges tailored to every skill level",
+            "gameCard": {
+                "freeBtn": "Free",
+                "premiumBtn": "Premium"
+            }
         },
         "statisticsSection": {
             "title": "📊 GeoGuesser Community"

@@ -3,6 +3,7 @@ import Section from '../common/Section/Section.Component'
 import { useTranslations } from 'next-intl'
 import styles from './PlaySection.module.scss'
 import Button from '../common/Button/Button.Component'
+import Link from 'next/link'
 
 const PlaySection = () => {
   const t = useTranslations('home.playSection')
@@ -13,13 +14,15 @@ const PlaySection = () => {
       subtitle={t('subtitle')}
       classes={styles['play-section']}
     >
-      <Button
-        className={styles['play-btn']}
-        size='large'
-        variant='contained'
-      >
-        {t('playButton')}
-      </Button>
+      <Link href={'/play'}>
+        <Button
+          className={styles['play-btn']}
+          size='large'
+          variant='contained'
+        >
+          {t('playButton')}
+        </Button>
+      </Link>
     </Section>
   )
 }
