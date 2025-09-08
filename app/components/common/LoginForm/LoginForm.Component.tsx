@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl'
 import React from 'react'
-import Button from '../common/Button/Button.Component'
+import Button from '../Button/Button.Component'
 import styles from './LoginForm.module.scss'
-import TextField from '../common/TextInput/TextField.Component'
+import TextField from '../TextInput/TextField.Component'
 
 const LoginForm = () => {
   const t = useTranslations('login.form')

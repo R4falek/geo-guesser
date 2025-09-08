@@ -1,16 +1,16 @@
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import styles from './LoginCard.module.scss'
-import LoginForm from '../LoginForm/LoginForm.Component'
-import Paper from '../common/Paper/Paper.Component'
+import LoginForm from '../common/LoginForm/LoginForm.Component'
 import Button from '../common/Button/Button.Component'
 import Link from 'next/link'
+import FormCard from '../common/FormCard/FormCard.Component'
 
 const LoginCard = () => {
   const t = useTranslations('login')
 
   return (
-    <Paper className={styles['login-cont']}>
+    <FormCard className={styles['login-card']}>
       <h1>🌍</h1>
       <h1>{t('title')}</h1>
       <LoginForm />
@@ -20,7 +20,7 @@ const LoginCard = () => {
         <Button variant='outlined'>{t('twitterBtn')}</Button>
       </div>
       <p>{t('noAccount')} <Link className={styles.link} href={'/register'}>{t('register')}</Link></p>
-    </Paper>
+    </FormCard>
   )
 }
 
