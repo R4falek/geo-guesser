@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/globals.scss'
+import '../modules/common/styles/globals.scss'
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
-import AppBar from '../components/AppBar/AppBar.Component';
+import AppBar from '../modules/common/components/AppBar/AppBar.Component';
 
 export default async function RootLayout({
   children,

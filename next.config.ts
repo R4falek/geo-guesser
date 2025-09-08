@@ -4,7 +4,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig: NextConfig = {
   sassOptions: {
     includePaths: ['./app/styles'],
-    prependData: '@use "_variables" as *;',
+    prependData: '@use "./app/modules/common/styles/_variables" as *;',
   },
   webpack(config) {
     config.module.rules.push({

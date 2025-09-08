@@ -1,8 +1,8 @@
-import DemoSection from '../components/DemoSection/DemoSection.Component';
-import GamesSection from '../components/GamesSection/GamesSection.Component';
-import HeroSection from '../components/HeroSection/HeroSection.Component';
-import PlaySection from '../components/PlaySection/PlaySection.Component';
-import StatisticsSection from '../components/StatisticsSection/StatisticsSection.Component';
+import DemoSection from '../modules/home/components/DemoSection/DemoSection.Component';
+import GamesSection from '../modules/home/components/GamesSection/GamesSection.Component';
+import HeroSection from '../modules/home/components/HeroSection/HeroSection.Component';
+import PlaySection from '../modules/home/components/PlaySection/PlaySection.Component';
+import StatisticsSection from '../modules/home/components/StatisticsSection/StatisticsSection.Component';
 
 export default function Home() {
   return (
