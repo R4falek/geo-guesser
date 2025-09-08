@@ -1,0 +1,10 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    button {
+        width: 100%;
+        border-radius: 10px !important;
+    }
+}

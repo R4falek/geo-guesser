@@ -17,6 +17,7 @@ body {
   line-height: 1.6;
   color: theme('text-primary');
   background-color: theme('background');
+  transition: 0.2s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,5 +27,5 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: $spacing-md;
-  color: theme('text-secondary');
+  color: theme('text-primary');
 }

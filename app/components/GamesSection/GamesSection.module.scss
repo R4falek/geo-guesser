@@ -1,10 +1,10 @@
 .games-section {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    background: theme('background-gradient');
     
     .title {
         font-size: 42px;
         font-weight: 600;
-        color: #ADD6F0;
+        color: theme('text-secondary');
     }
 
     .games-cont{

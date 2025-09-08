@@ -8,6 +8,19 @@
         "register": "Register",
         "logout": "Logout"
     },
+    "login": {
+        "title": "GeoGuesser",
+        "form": {
+            "email": "Email",
+            "password": "Password",
+            "login": "Log in"
+        },
+        "googleBtn": "Google",
+        "facebookBtn": "Facebook",
+        "twitterBtn": "Twitter",
+        "noAccount": "Don't have an account?",
+        "register": "Sign up"
+    },
     "home": {
         "heroSection": {
             "title": "GeoGuesser",

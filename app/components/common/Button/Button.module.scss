@@ -4,11 +4,11 @@
     text-transform: none !important;
 
     &:global(.MuiButton-contained) {
-        background: linear-gradient(135deg, #4ecdc4, #44a08d);
+        background: theme('primary-gradient');
         box-shadow: none;
 
         &:hover {
-            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.5);
+            box-shadow: 0 5px 15px theme('primary-shadow');
         }
     }
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { useThemeStore } from '@/app/[locale]/stores/themeStore'
+import { useThemeStore } from '@/app/stores/themeStore'
 import { useEffect } from 'react'
 import { Moon, Sun } from 'lucide-react';
 import styles from './ThemeToggle.module.scss'
@@ -26,11 +26,11 @@ export const ThemeToggle = () => {
     >
       <div className={styles.iconContainer}>
         <Sun
-          className={`${styles.icon} ${styles.sunIcon} ${theme === 'light' ? styles.active : ''}`}
+          className={`${styles.icon} ${styles.sunIcon} ${theme === 'dark' ? styles.active : ''}`}
           size={16}
         />
         <Moon
-          className={`${styles.icon} ${styles.moonIcon} ${theme === 'dark' ? styles.active : ''}`}
+          className={`${styles.icon} ${styles.moonIcon} ${theme === 'light' ? styles.active : ''}`}
           size={16}
         />
       </div>

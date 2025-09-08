@@ -1,4 +1,4 @@
-import { NavigationItem } from '../models/NavigationItem.Model';
+import { NavigationItem } from '../../models/NavigationItem.Model';
 
 export const LoginButtons: NavigationItem[] = [
   {
