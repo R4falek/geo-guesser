@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import { useInView } from '@/app/hooks/useInView'
 
 interface TypewriterLabelProps {
   label: string
@@ -17,8 +18,14 @@ const TypewriterLabel: React.FC<TypewriterLabelProps> = ({
   onComplete,
 }) => {
   const [displayedText, setDisplayedText] = useState('')
+  const { isInView, ref } = useInView()
 
   useEffect(() => {
+    if (!isInView) {
+      setDisplayedText('')
+      return
+    }
+
     // eslint-disable-next-line no-undef
     let timeoutId: NodeJS.Timeout
 
@@ -37,6 +44,7 @@ const TypewriterLabel: React.FC<TypewriterLabelProps> = ({
 
       typeNextChar()
     }
+
     setDisplayedText('')
     timeoutId = setTimeout(startTyping, delay)
 
@@ -45,10 +53,10 @@ const TypewriterLabel: React.FC<TypewriterLabelProps> = ({
         clearTimeout(timeoutId)
       }
     }
-  }, [label, speed, delay, onComplete])
+  }, [label, speed, delay, onComplete, isInView])
 
   return (
-    <span className={className}>
+    <span ref={ref} className={className}>
       {displayedText}
     </span>
   )
