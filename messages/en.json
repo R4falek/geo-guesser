@@ -48,15 +48,22 @@
             "body": "Exciting challenges tailored to every skill level",
             "gameCard": {
                 "freeBtn": "Free",
-                "premiumBtn": "Premium"
+                "premiumBtn": "Premium",
+                "registrationRequired": "Registration required"
             }
         },
         "statisticsSection": {
-            "title": "📊 GeoGuesser Community"
+            "title": "📊 Społeczność GeoGuesser",
+            "statistics": {
+                "players": "Players",
+                "games": "Games",
+                "countries": "Countries",
+                "gameModes": "Game Modes"
+            }
         },
         "playSection": {
             "title": "Ready for an adventure? 🚀",
-            "subtitle": "Join millions of players discovering the world through GeoGuessr. Start your geographic adventure today - completely free!",
+            "subtitle": "Join millions of players discovering the world through GeoGuesser. Start your geographic adventure today - completely free!",
             "playButton": "🎮 Start playing now!"
         }
     }

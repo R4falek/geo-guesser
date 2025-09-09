@@ -53,11 +53,17 @@
             }
         },
         "statisticsSection": {
-            "title": "📊 Społeczność GeoGuesser"
+            "title": "📊 Społeczność GeoGuesser",
+            "statistics": {
+                "players": "Graczy",
+                "games": "Gier",
+                "countries": "Państw",
+                "gameModes": "Trybów gry"
+            }
         },
         "playSection": {
             "title": "Gotowy na przygodę? 🚀",
-            "subtitle": "Dołącz do milionów graczy odkrywających świat przez GeoGuessr. Rozpocznij swoją geograficzną przygodę już dziś - całkowicie za darmo!",
+            "subtitle": "Dołącz do milionów graczy odkrywających świat przez GeoGuesser. Rozpocznij swoją geograficzną przygodę już dziś - całkowicie za darmo!",
             "playButton": "🎮 Rozpocznij grę teraz!"
         }
     }
