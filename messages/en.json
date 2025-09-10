@@ -6,7 +6,8 @@
         "help": "Help",
         "login": "Login",
         "register": "Register",
-        "logout": "Logout"
+        "logout": "Logout",
+        "goToProfile": "Go to profile"
     },
     "login": {
         "title": "GeoGuesser",

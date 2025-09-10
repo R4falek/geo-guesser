@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, ReactNode, useContext, useState } from 'react'
+import { createContext, ReactNode, useContext, useLayoutEffect, useState } from 'react'
 import { User } from '../models/User.Model'
 import { useRouter } from '@/i18n/navigation'
 
@@ -17,6 +17,12 @@ export const AuthProvider = ({ children }: {children: ReactNode}) => {
   const [user, setUser] = useState<User | undefined>(undefined)
   const [isLoading, setIsLoading] = useState(true)
   const router = useRouter()
+
+  useLayoutEffect(() => {
+    const user = localStorage.getItem('user')
+    if (!user) {return}
+    setUser(JSON.parse(user))
+  }, [])
 
   const login =  async (email:string, password: string) => {
     setIsLoading(true)
@@ -40,6 +46,7 @@ export const AuthProvider = ({ children }: {children: ReactNode}) => {
 
   const logout = () => {
     setUser(undefined)
+    localStorage.removeItem('user')
   }
 
   const value = {

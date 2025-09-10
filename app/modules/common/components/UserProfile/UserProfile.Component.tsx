@@ -4,20 +4,22 @@ import { useAuth } from '@/app/modules/auth/contexts/Auth.Context'
 import MenuButton from '../MenuButton/MenuButton.Component'
 import { Avatar } from '@mui/material'
 import { useRouter } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 
 
 const UserProfile = () => {
   const { user, logout } = useAuth()
   const router = useRouter()
+  const t = useTranslations('appBar')
 
   const profileMenuItems = [
     {
-      label: 'Go to Profile',
+      label: t('goToProfile'),
       onClick: () => router.push('/profile'),
       icon: '👤',
     },
     {
-      label: 'Logout',
+      label: t('logout'),
       onClick: logout,
       icon: '🚪',
     },
