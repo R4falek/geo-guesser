@@ -19,10 +19,10 @@ export const NavigationItems: NavigationItem[] = [
     id: 'statistics',
     link: '/#statistics',
   },
-  {
-    title: 'help',
-    icon: '❓',
-    id: 'help',
-    link: '/#help',
-  },
+  // {
+  //   title: 'help',
+  //   icon: '❓',
+  //   id: 'help',
+  //   link: '/#help',
+  // },
 ]

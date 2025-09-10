@@ -12,7 +12,7 @@ interface NavigationMenuProps {
 const NavigationMenu = ({ items }: NavigationMenuProps) => {
   const t = useTranslations('appBar')
   return (
-    <div className={styles['nav-menu']}>
+    <nav className={styles['nav-menu']}>
       {items.map((item: NavigationItem) => (
         <Link
           key={item.id}
@@ -27,7 +27,7 @@ const NavigationMenu = ({ items }: NavigationMenuProps) => {
           </Button>
         </Link>
       ))}
-    </div>
+    </nav>
   )
 }
 

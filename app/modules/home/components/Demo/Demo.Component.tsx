@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import styles from './Demo.module.scss'
 import Paper from '@/app/modules/common/components/Paper/Paper.Component'
 import { GoogleStreetView } from '@/app/modules/common/components/GoogleStreetView/GoogleStreetView.Component'
-import { Chip } from '@mui/material'
+import Chip from '@/app/modules/common/components/Chip/Chip.Component'
 
 const Demo = () => {
   const t = useTranslations('home.demoSection.demo')

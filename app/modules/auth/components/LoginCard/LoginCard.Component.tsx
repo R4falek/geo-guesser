@@ -4,11 +4,10 @@ import styles from './LoginCard.module.scss'
 import Link from 'next/link'
 import FormCard from '@/app/modules/common/components/FormCard/FormCard.Component'
 import LoginForm from '@/app/modules/common/components/LoginForm/LoginForm.Component'
-import { Button } from '@mui/material'
+import Button from '@/app/modules/common/components/Button/Button.Component'
 
 const LoginCard = () => {
   const t = useTranslations('login')
-
   return (
     <FormCard className={styles['login-card']}>
       <h1>🌍</h1>

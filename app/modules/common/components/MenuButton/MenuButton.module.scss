@@ -1,0 +1,13 @@
+.menu-button {
+    .arrow {
+        display: inline-block;
+        transition: transform 0.2s ease;
+        transform: rotate(0deg);
+        margin-left: 8px;
+        
+        &.rotated {
+            transform: rotate(180deg);
+        }
+    }
+    .item { margin-right: 8 } 
+}

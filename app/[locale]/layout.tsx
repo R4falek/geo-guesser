@@ -4,6 +4,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import AppBar from '../modules/common/components/AppBar/AppBar.Component';
+import { AuthProvider } from '../modules/auth/contexts/Auth.Context';
 
 export default async function RootLayout({
   children,
@@ -24,8 +25,10 @@ export default async function RootLayout({
       </script>
       <NextIntlClientProvider>
         <body>
-          <AppBar />
-          {children}
+          <AuthProvider>
+            <AppBar />
+            {children}
+          </AuthProvider>
         </body>
       </NextIntlClientProvider>
     </html>
