@@ -1,6 +1,8 @@
 .auth-layout {
     background: theme('secondary-background-gradient');
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    padding: 30px;
     align-content: center;
     justify-items: center;
 }

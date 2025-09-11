@@ -1,4 +1,4 @@
-.text-field {
+.autocomplete {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -15,6 +15,12 @@
             border-radius: 10px;
             height: 40px;
             color: theme('text-primary');
+            padding: 0px !important;
+            padding-right: 70px !important;
+        }
+
+        :global(.MuiInputBase-input){
+            padding: 7.5px 14px !important;
         }
         
         :global(.MuiOutlinedInput-notchedOutline) {
@@ -31,9 +37,26 @@
             border: 2px solid theme('error') !important;
         }
 
-        input:-webkit-autofill {
-            height: 6px;
-            border-radius: 9px;
+        :global(.MuiAutocomplete-endAdornment) {
+            color: theme('text-primary');
+            display: flex;
+            flex-direction: row;
+        }
+
+        :global(.MuiAutocomplete-popupIndicator) {
+            color: rgba(255, 255, 255, 0.5);
+            width: 30px;
+        }
+
+        :global(.MuiAutocomplete-clearIndicator) {
+            color: rgba(255, 255, 255, 0.5);
+            width: 30px;
+        }
+
+        :global(.MuiAutocomplete-paper) {
+            background: rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
         }
     }
 }

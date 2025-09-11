@@ -22,6 +22,31 @@
         "noAccount": "Don't have an account?",
         "register": "Sign up"
     },
+    "register": {
+        "title": "Join GeoGuesser",
+        "subtitle": "Start your geographical adventure!",
+        "hasAccount": "Already have an account?",
+        "login": "Log in",
+        "googleBtn": "Google",
+        "facebookBtn": "Facebook",
+        "twitterBtn": "Twitter",
+        "form": {
+            "profilePicture": "Profile picture",
+            "selectFile": "Select file",
+            "remove": "Remove",
+            "firstName": "First name",
+            "lastName": "Last name",
+            "email": "Email",
+            "login": "Username",
+            "country": "Country",
+            "password": "Password",
+            "repeatPassword": "Confirm password",
+            "regulations": "I accept the Terms and Conditions and Privacy Policy of GeoGuesser",
+            "newsletter": "I want to receive newsletter with news and promotions",
+            "register": "Create account"
+        },
+        "registerTrough": "or register through"
+    },
     "home": {
         "heroSection": {
             "title": "GeoGuesser",
@@ -66,6 +91,20 @@
             "title": "Ready for an adventure? 🚀",
             "subtitle": "Join millions of players discovering the world through GeoGuesser. Start your geographic adventure today - completely free!",
             "playButton": "🎮 Start playing now!"
+        },
+        "helloSection": {
+            "title": "Welcome back, ",
+            "titleSuffix": "! 👋",
+            "subtitle": "Ready for another geographical adventure?"
+        },
+        "userStatisticsSection": {
+            "title": "📊 Your Statistics",
+            "statistics": {
+                "score": "Total Score",
+                "gamesCount": "Games Played",
+                "accuracy": "Accuracy",
+                "achievements": "Achievements"
+            }
         }
     }
 }

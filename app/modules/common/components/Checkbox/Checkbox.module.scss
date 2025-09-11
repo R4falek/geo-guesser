@@ -1,0 +1,19 @@
+.checkbox {
+    text-align: start;
+    vertical-align: center;
+    color: theme('primary-text');
+
+    :global(.MuiButtonBase-root) {
+        color: theme('primary-text'); 
+    }
+
+    :global(.MuiButtonBase-root.Mui-checked) {
+        color: theme('primary'); 
+    }
+
+    &__error {
+        color: theme('error');
+        font-weight: 600;
+        font-size: 14px;
+    }
+}

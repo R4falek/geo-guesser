@@ -22,6 +22,31 @@
         "noAccount": "Nie masz konta?",
         "register": "Zarejestruj się"
     },
+    "register": {
+        "title": "Dołącz do GeoGuesser",
+        "subtitle": "Rozpocznij swoją geograficzną przygodę!",
+        "hasAccount": "Masz już konto?",
+        "login": "Zaloguj się",
+        "googleBtn": "Google",
+        "facebookBtn": "Facebook",
+        "twitterBtn": "Twitter",
+        "form": {
+            "profilePicture": "Zdjęcie profilowe",
+            "selectFile": "Wybierz plik",
+            "remove": "Usuń",
+            "firstName": "Imię",
+            "lastName": "Nazwisko",
+            "email": "Email",
+            "login": "Nazwa użytkownika",
+            "country": "Kraj",
+            "password": "Hasło",
+            "repeatPassword": "Potwierdź hasło",
+            "regulations": "Akceptuję Regulamin i Politykę prywatności GeoGuesser",
+            "newsletter": "Chcę otrzymywać newsletter z nowościami i promocjami",
+            "register": "Utwórz konto"
+        },
+        "registerTrough": "lub zarejestruj się prez"
+    },
     "home": {
         "heroSection": {
             "title": "GeoGuesser",
@@ -66,6 +91,20 @@
             "title": "Gotowy na przygodę? 🚀",
             "subtitle": "Dołącz do milionów graczy odkrywających świat przez GeoGuesser. Rozpocznij swoją geograficzną przygodę już dziś - całkowicie za darmo!",
             "playButton": "🎮 Rozpocznij grę teraz!"
+        },
+        "helloSection": {
+            "title": "Witaj z powrotem,",
+            "titleSuffix": "! 👋",
+            "subtitle": "Gotowy na kolejną geograficzną przygodę?"
+        },
+        "userStatisticsSection": {
+            "title": "📊 Twoje statystyki",
+            "statistics": {
+                "score": "Łączny wynik",
+                "gamesCount": "Gier rozegranych",
+                "accuracy": "Dokładność",
+                "achievements": "Osiągnięcia"
+            }
         }
     }
 }

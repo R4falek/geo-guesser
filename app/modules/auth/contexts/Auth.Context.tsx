@@ -3,12 +3,14 @@
 import { createContext, ReactNode, useContext, useLayoutEffect, useState } from 'react'
 import { User } from '../models/User.Model'
 import { useRouter } from '@/i18n/navigation'
+import { register } from 'module'
 
 interface AuthContextType {
   user?: User
   isLoading: boolean
   login: (email:string, password: string) => Promise<void>
   logout: () => void
+  register: () => Promise<void>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -49,11 +51,16 @@ export const AuthProvider = ({ children }: {children: ReactNode}) => {
     localStorage.removeItem('user')
   }
 
+  const register = async () => {
+
+  }
+
   const value = {
     user,
     isLoading,
     login,
     logout,
+    register,
   }
 
   return (

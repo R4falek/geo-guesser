@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './LoginCard.module.scss'
 import Link from 'next/link'
 import FormCard from '@/app/modules/common/components/FormCard/FormCard.Component'
-import LoginForm from '@/app/modules/common/components/LoginForm/LoginForm.Component'
+import LoginForm from '@/app/modules/auth/components/LoginForm/LoginForm.Component'
 import Button from '@/app/modules/common/components/Button/Button.Component'
 
 const LoginCard = () => {

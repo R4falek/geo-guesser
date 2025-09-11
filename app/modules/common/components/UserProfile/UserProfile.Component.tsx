@@ -33,6 +33,7 @@ const UserProfile = () => {
       className={styles['user-profile']}
     >
       <div className={styles['avatar-cont']}>
+        {/* TODO - dodac zdjecie */}
         <Avatar className={styles.avatar}>af</Avatar>
       </div>
       {user?.login}

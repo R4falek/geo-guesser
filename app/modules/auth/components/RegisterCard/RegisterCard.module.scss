@@ -1,0 +1,51 @@
+.register-card {
+    button {
+        width: 100%;
+        border-radius: 10px !important;
+    }
+
+    .btn-cont {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    @media (max-width: $mobile) {
+        .btn-cont {
+            flex-direction: column;
+        }
+    }
+
+    .link {
+        color: theme('primary');
+        text-decoration: none;
+        font-weight: 600;
+        
+        &:hover {
+            color: theme('primary-hover');
+        }
+    }
+
+    .divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 14px;
+        
+        &::before, &::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        &::before {
+            margin-right: 10px;
+        }
+        
+        &::after {
+            margin-left: 10px;
+        }
+    }
+}

@@ -2,9 +2,9 @@
 
 import { useTranslations } from 'next-intl'
 import React, { FormEvent } from 'react'
-import Button from '../Button/Button.Component'
+import Button from '../../../common/components/Button/Button.Component'
 import styles from './LoginForm.module.scss'
-import TextField from '../TextInput/TextField.Component'
+import TextField from '../../../common/components/TextInput/TextField.Component'
 import { useAuth } from '@/app/modules/auth/contexts/Auth.Context'
 
 const LoginForm = () => {
@@ -24,11 +24,13 @@ const LoginForm = () => {
         label={t('email')}
         name='email'
         type='email'
+        required
       />
       <TextField
         label={t('password')}
         name='password'
         type='password'
+        required
       />
       <Button
         variant='contained'

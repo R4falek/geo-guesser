@@ -2,7 +2,6 @@ import LoginCard from '@/app/modules/auth/components/LoginCard/LoginCard.Compone
 import React from 'react'
 
 const Login = () => {
-
   return (
     <LoginCard />
   )
