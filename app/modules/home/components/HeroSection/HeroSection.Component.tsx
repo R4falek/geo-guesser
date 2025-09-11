@@ -5,6 +5,7 @@ import styles from './HeroSection.module.scss'
 import TypewriterLabel from '../../../common/components/TypewriterLabel/TypewriterLabel.Component'
 import Section from '../../../common/components/Section/Section.Component'
 import Link from 'next/link'
+import { showInfoSnackbar } from '@/app/modules/common/services/SnackbarService'
 
 const HeroSection = () => {
   const t = useTranslations('home.heroSection')
@@ -25,7 +26,7 @@ const HeroSection = () => {
     >
       <div className={styles['btn-container']}>
         <Link href={'/play'}>
-          <Button size='medium' variant='contained'>{t('playButton')}</Button>
+          <Button size='medium' variant='contained' onClick={() => showInfoSnackbar('Nie zaimplementowane')}>{t('playButton')}</Button>
         </Link>
         <Link href={'/#demo'}>
           <Button size='medium' variant='outlined'>{t('demoButton')}</Button>

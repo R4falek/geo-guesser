@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import AppBar from '../modules/common/components/AppBar/AppBar.Component';
 import { AuthProvider } from '../modules/auth/contexts/Auth.Context';
+import { NotificationProvider } from '../modules/common/contexts/NotificationContext';
 
 export default async function RootLayout({
   children,
@@ -25,10 +26,12 @@ export default async function RootLayout({
       </script>
       <NextIntlClientProvider>
         <body>
-          <AuthProvider>
-            <AppBar />
-            {children}
-          </AuthProvider>
+          <NotificationProvider>
+            <AuthProvider>
+              <AppBar />
+              {children}
+            </AuthProvider>
+          </NotificationProvider>
         </body>
       </NextIntlClientProvider>
     </html>

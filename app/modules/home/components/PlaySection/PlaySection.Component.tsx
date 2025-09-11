@@ -4,6 +4,7 @@ import styles from './PlaySection.module.scss'
 import Link from 'next/link'
 import Section from '@/app/modules/common/components/Section/Section.Component'
 import Button from '@/app/modules/common/components/Button/Button.Component'
+import { showInfoSnackbar } from '@/app/modules/common/services/SnackbarService'
 
 const PlaySection = () => {
   const t = useTranslations('home.playSection')
@@ -19,6 +20,7 @@ const PlaySection = () => {
           className={styles['play-btn']}
           size='large'
           variant='contained'
+          onClick={() => showInfoSnackbar('Nie zaimplementowane')}
         >
           {t('playButton')}
         </Button>

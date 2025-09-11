@@ -3,6 +3,7 @@ import styles from './GameCard.module.scss'
 import { useTranslations } from 'next-intl'
 import Paper from '@/app/modules/common/components/Paper/Paper.Component'
 import Chip from '@/app/modules/common/components/Chip/Chip.Component'
+import { showInfoSnackbar } from '@/app/modules/common/services/SnackbarService'
 
 interface GameCardProps {
     icon?: ReactNode
@@ -15,7 +16,7 @@ interface GameCardProps {
 const GameCard = ({ icon, title, text, isLocked, isFree }: GameCardProps) => {
   const t = useTranslations('home.gamesSection.gameCard')
   return (
-    <Paper className={styles['game-card']}>
+    <Paper className={styles['game-card']} onClick={() => showInfoSnackbar('Nie zaimplementowane')}>
       <div className={`${styles.icon} ${styles.icon__animated}`}>{icon}</div>
       <h1 className={styles.title}>{title}</h1>
       <p>{text}</p>

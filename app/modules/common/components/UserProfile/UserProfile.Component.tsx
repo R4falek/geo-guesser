@@ -3,19 +3,18 @@ import styles from './UserProfile.module.scss'
 import { useAuth } from '@/app/modules/auth/contexts/Auth.Context'
 import MenuButton from '../MenuButton/MenuButton.Component'
 import { Avatar } from '@mui/material'
-import { useRouter } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
+import { showInfoSnackbar } from '../../services/SnackbarService'
 
 
 const UserProfile = () => {
   const { user, logout } = useAuth()
-  const router = useRouter()
   const t = useTranslations('appBar')
 
   const profileMenuItems = [
     {
       label: t('goToProfile'),
-      onClick: () => router.push('/profile'),
+      onClick: () => showInfoSnackbar('Nie zaimplementowane'),
       icon: '👤',
     },
     {
